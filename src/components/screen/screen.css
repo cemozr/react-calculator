@@ -1,0 +1,12 @@
+.screen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: larger;
+  font-weight: bold;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 8px -3px rgba(180, 16, 212, 0.966);
+}

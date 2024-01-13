@@ -1,0 +1,9 @@
+.wrapper {
+  background-color: black;
+  /* box-shadow: 0.5rem 0.5rem gray; */
+  border-radius: 0.5rem;
+  width: 25rem;
+  padding: 2rem;
+  height: 40rem;
+  box-shadow: 0px 10px 50px -4px rgba(180, 16, 212, 0.966);
+}
