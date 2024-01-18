@@ -11,5 +11,18 @@
 }
 
 .button:hover {
-  box-shadow: 0px 5px 15px rgba(180, 16, 212, 0.966);
+  box-shadow: 0px 5px 18px rgba(180, 16, 212, 0.966);
+}
+.equals {
+  grid-column: 3 / 5;
+  background-color: rgba(230, 189, 238, 0.966);
+  color: white;
+  border-color: black;
+  font-size: large;
+}
+.operator {
+  background-color: rgba(230, 189, 238, 0.966);
+  color: white;
+  border-color: black;
+  font-size: large;
 }
