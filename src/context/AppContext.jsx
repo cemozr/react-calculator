@@ -3,10 +3,11 @@ import { useState } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [screen, setScreen] = useState(0);
-  const screenArray = [];
+  const [screen, setScreen] = useState([]);
   const test = "deneme";
+  let enteredNumber;
 
+  const signs = ["C", "DEL", "+/-", "="];
   const buttonValues = [
     ["C", "DEL", "+/-", "/"],
     [7, 8, 9, "x"],
@@ -17,9 +18,15 @@ export const AppProvider = ({ children }) => {
   // need fix
   const handleClick = (e) => {
     e.preventDefault();
-    const enteredNumber = e.target.innerHTML;
-    setScreen([...screenArray, enteredNumber]);
-    console.log(screenArray);
+    enteredNumber = e.target.innerHTML;
+    [...screen, enteredNumber].filter((s) => {
+      signs.includes(s)
+        ? setScreen([screen])
+        : setScreen([...screen, enteredNumber]);
+    });
+    // enteredNumber !=
+    // ? setScreen([...screen, enteredNumber])
+    // : setScreen([screen]);
   };
 
   const handleChange = (e) => {};

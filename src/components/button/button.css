@@ -15,13 +15,13 @@
 }
 .equals {
   grid-column: 3 / 5;
-  background-color: rgba(230, 189, 238, 0.966);
+  background-color: rgba(196, 96, 216, 0.966);
   color: white;
   border-color: black;
   font-size: large;
 }
 .operator {
-  background-color: rgba(230, 189, 238, 0.966);
+  background-color: rgba(196, 96, 216, 0.966);
   color: white;
   border-color: black;
   font-size: large;
