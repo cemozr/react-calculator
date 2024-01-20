@@ -4,11 +4,11 @@ import { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 
 const Screen = () => {
-  const { handleChange, screen } = useContext(AppContext);
+  const { screen } = useContext(AppContext);
 
   return (
-    <div onChange={handleChange} className="screen">
-      {screen}
+    <div className="screen">
+      <p> {screen.enteredNum ? screen.enteredNum : screen.res} </p>
     </div>
   );
 };
